@@ -21,9 +21,14 @@ public class Vetor {
     }
 
     //Version 2
-    public void add2 (String element){
-
-        }
+    public void add2 (final String element) throws Exception{
+            if(size < elements.length){
+                elements[size] = element;
+                size++;
+            }
+            else {
+                throw new Exception("Vetor cheio!");
+            }
     }
 
 }

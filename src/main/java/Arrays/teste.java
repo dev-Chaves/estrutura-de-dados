@@ -3,21 +3,17 @@ package Arrays;
 public class teste {
     public static void main(String[] args) {
 
-    Vetor names = new Vetor(10);
+    Vetor names = new Vetor(3);
 
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
-        names.add("Chaves");
+    try {
+        names.add2("Chaves");
+        names.add2("Chaves");
+        names.add2("Chaves");
+//        names.add2("Chaves");
+    }catch (Exception e){
+        e.printStackTrace();
+    }
+
 
     }
 }
