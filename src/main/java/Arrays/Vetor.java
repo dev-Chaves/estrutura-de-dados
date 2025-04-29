@@ -1,0 +1,29 @@
+package Arrays;
+
+public class Vetor {
+
+    public String[] elements;
+    public int size;
+
+    public Vetor(final int capacity) {
+        this.elements = new String[capacity];
+        this.size = 0;
+    }
+
+    //Version 1
+    public void add (String element){
+        for(int i=0; i < this.elements.length; i++){
+            if (this.elements[i] == null){
+                this.elements[i] = element;
+                break;
+            }
+        }
+    }
+
+    //Version 2
+    public void add2 (String element){
+
+        }
+    }
+
+}
