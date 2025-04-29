@@ -31,4 +31,16 @@ public class Vetor {
             }
     }
 
+    private void aumentaCapacidade(){
+        if(size == elements.length){
+            String[] newElements = new String[elements.length * 2];
+
+            for(int i=0; i<elements.length; i++){
+                newElements[i] = elements[i];
+            }
+
+        }
+    }
+
+
 }
