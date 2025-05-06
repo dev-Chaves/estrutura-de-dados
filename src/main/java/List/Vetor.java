@@ -21,13 +21,15 @@ public class Vetor {
     }
 
     //Version 2
-    public void add2 (final String element) throws Exception{
+    public boolean add2 (final String element) throws Exception{
+            aumentaCapacidade();
             if(size < elements.length){
                 elements[size] = element;
                 size++;
+                return true;
             }
             else {
-                throw new Exception("Vetor cheio!");
+                return false;
             }
     }
 
@@ -38,6 +40,8 @@ public class Vetor {
             for(int i=0; i<elements.length; i++){
                 newElements[i] = elements[i];
             }
+
+            elements = newElements;
 
         }
     }
