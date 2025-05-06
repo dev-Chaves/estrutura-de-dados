@@ -7,6 +7,13 @@ public class Main {
 
         Stack<Integer> strings = new Stack<>();
 
+        Pilhas pilhas = new Pilhas(10);
+
+        pilhas.push(10);
+        pilhas.push(10);
+        pilhas.push(10);
+        pilhas.push(20);
+
         strings.add(1);
         strings.add(1);
         strings.add(4);
@@ -14,6 +21,8 @@ public class Main {
         strings.add(7);
 
         System.out.println(strings.peek());
+        System.out.println(pilhas.peek());
+
 
     }
 }

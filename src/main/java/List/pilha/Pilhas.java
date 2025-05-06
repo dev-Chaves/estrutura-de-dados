@@ -2,8 +2,8 @@ package List.pilha;
 
 public class Pilhas {
 
-    public int[] dados;
-    public int top;
+    private int[] dados;
+    private int top;
 
     public Pilhas(int capacidade) {
         dados = new int[capacidade];
@@ -21,7 +21,7 @@ public class Pilhas {
         }
         return dados[--top];
     }
-    public int peek(int valor){
+    public int peek(){
         return dados[top--];
     }
 }
