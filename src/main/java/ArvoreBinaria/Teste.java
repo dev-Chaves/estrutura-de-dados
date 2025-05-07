@@ -8,7 +8,7 @@ public class Teste {
         arvore.inserir(new Folha(2));
         arvore.inserir(new Folha(1));
         arvore.inserir(new Folha(10));
-
+//        arvore.inserir(new Folha(12));
 
     }
 }
